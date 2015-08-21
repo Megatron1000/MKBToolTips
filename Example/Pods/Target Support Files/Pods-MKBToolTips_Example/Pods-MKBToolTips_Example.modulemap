@@ -1,6 +1,0 @@
-framework module Pods_MKBToolTips_Example {
-  umbrella header "Pods-MKBToolTips_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

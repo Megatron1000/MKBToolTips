@@ -1,25 +1,30 @@
 {
   "name": "MKBToolTips",
   "version": "0.1.0",
-  "summary": "A short description of MKBToolTips.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/MKBToolTips",
+  "summary": "An easy way to show a tooltip for any UIView",
+  "description": "An easy way to show a tooltip for a UIView at a specified angle",
+  "homepage": "https://github.com/Megatron1000/MKBToolTips",
   "license": "MIT",
   "authors": {
-    "Mark Bridges": "mark.bridges@sainsburysentertainment.co.uk"
+    "Mark Bridges": "support@mark-bridges.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/MKBToolTips.git",
+    "git": "https://github.com/Megatron1000/MKBToolTips.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "MKBToolTips": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "PureLayout": [
+      "~> 3.0"
     ]
   }
 }
