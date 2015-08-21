@@ -7,10 +7,10 @@
             buildForRunning = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "MKBToolTips_Example.app"
-               BlueprintName = "MKBToolTips_Example"
-               ReferencedContainer = "container:MKBToolTips.xcodeproj">
+               BlueprintIdentifier = "B79E6406CAFF0A1D9A325FBE528334AA"
+               BuildableName = "MKBToolTips.framework"
+               BlueprintName = "MKBToolTips"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -24,7 +24,7 @@
             BlueprintIdentifier = "6003F589195388D20070C39A"
             BuildableName = "MKBToolTips_Example.app"
             BlueprintName = "MKBToolTips_Example"
-            ReferencedContainer = "container:MKBToolTips.xcodeproj">
+            ReferencedContainer = "container:../MKBToolTips.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>

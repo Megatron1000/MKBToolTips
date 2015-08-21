@@ -9,24 +9,23 @@
 Pod::Spec.new do |s|
   s.name             = "MKBToolTips"
   s.version          = "0.1.0"
-  s.summary          = "A short description of MKBToolTips."
+  s.summary          = "An easy way to show a tooltip for any UIView"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "An easy way to show a tooltip for a UIView at a specified angle"
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MKBToolTips"
+  s.homepage         = "https://github.com/Megatron1000/MKBToolTips"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Mark Bridges" => "mark.bridges@sainsburysentertainment.co.uk" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MKBToolTips.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Mark Bridges" => "support@mark-bridges.com" }
+  s.source           = { :git => "https://github.com/Megatron1000/MKBToolTips.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/markbridgesapps
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -36,5 +35,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'PureLayout', '~> 3.0'
 end

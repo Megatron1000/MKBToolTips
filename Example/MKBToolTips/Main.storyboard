@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,48 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY3-F0-SiB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="YME-v4-WJz">
+                                        <barButtonItem key="leftBarButtonItem" title="Show Tooltip" id="tnW-vc-thi">
+                                            <connections>
+                                                <action selector="showBarButtonToolTip:" destination="whP-gf-Uak" id="h5K-Cm-CS3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn5-WC-xVv">
+                                <rect key="frame" x="50" y="520" width="89" height="30"/>
+                                <state key="normal" title="Show Tooltip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBottomLeftToolTip:" destination="whP-gf-Uak" eventType="touchUpInside" id="6M3-Pm-PNj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgk-ar-cr3">
+                                <rect key="frame" x="445" y="94" width="89" height="30"/>
+                                <state key="normal" title="Show Tooltip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTopRightToolTip:" destination="whP-gf-Uak" eventType="touchUpInside" id="6uz-Vg-INs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uY3-F0-SiB" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="66B-18-S5a"/>
+                            <constraint firstAttribute="trailing" secondItem="uY3-F0-SiB" secondAttribute="trailing" id="HJb-pP-N5d"/>
+                            <constraint firstItem="uY3-F0-SiB" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="Nm3-tb-zss"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xgk-ar-cr3" secondAttribute="trailing" constant="50" id="dHk-ym-J7D"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="vn5-WC-xVv" secondAttribute="bottom" constant="50" id="gXk-Fl-0RI"/>
+                            <constraint firstItem="Xgk-ar-cr3" firstAttribute="top" secondItem="uY3-F0-SiB" secondAttribute="bottom" constant="50" id="k0K-cJ-I7K"/>
+                            <constraint firstItem="vn5-WC-xVv" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="50" id="lHJ-u0-KpW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

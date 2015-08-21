@@ -1,0 +1,25 @@
+{
+  "name": "MKBToolTips",
+  "version": "0.1.0",
+  "summary": "A short description of MKBToolTips.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MKBToolTips",
+  "license": "MIT",
+  "authors": {
+    "Mark Bridges": "mark.bridges@sainsburysentertainment.co.uk"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MKBToolTips.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "MKBToolTips": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

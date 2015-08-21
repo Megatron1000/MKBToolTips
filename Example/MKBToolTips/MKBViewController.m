@@ -7,6 +7,7 @@
 //
 
 #import "MKBViewController.h"
+#import "MKBToolTipController.h"
 
 @interface MKBViewController ()
 
@@ -17,13 +18,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)showBarButtonToolTip:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+}
+
+- (IBAction)showBottomLeftToolTip:(id)sender
+{
+}
+
+- (IBAction)showTopRightToolTip:(id)sender
+{
+    
 }
 
 @end

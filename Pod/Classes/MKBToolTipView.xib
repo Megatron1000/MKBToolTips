@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Mary Ann-Regular.ttf">
+            <string>MaryAnn</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKBToolTipView">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGV-5K-dmb" userLabel="Tip Circle" customClass="MKBToolTipCircle">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQg-nq-OA1">
+                    <rect key="frame" x="15" y="15" width="120" height="120"/>
+                    <fontDescription key="fontDescription" name="MaryAnn" family="Mary Ann" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QGV-5K-dmb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Ih-rP-Arr"/>
+                <constraint firstAttribute="bottom" secondItem="NQg-nq-OA1" secondAttribute="bottom" constant="15" id="0hS-Iq-Qoo"/>
+                <constraint firstItem="QGV-5K-dmb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3es-1p-3me"/>
+                <constraint firstItem="NQg-nq-OA1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="6Wl-N0-xL4"/>
+                <constraint firstAttribute="trailing" secondItem="QGV-5K-dmb" secondAttribute="trailing" id="80v-i0-PSB"/>
+                <constraint firstAttribute="bottom" secondItem="QGV-5K-dmb" secondAttribute="bottom" id="KTf-UY-m2g"/>
+                <constraint firstItem="NQg-nq-OA1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="dLE-Y9-S4j"/>
+                <constraint firstAttribute="trailing" secondItem="NQg-nq-OA1" secondAttribute="trailing" constant="15" id="hrk-GX-iVM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tipCircle" destination="QGV-5K-dmb" id="51W-Pt-9xg"/>
+                <outlet property="tipLabel" destination="NQg-nq-OA1" id="Ld3-rn-uq1"/>
+            </connections>
+            <point key="canvasLocation" x="872" y="534"/>
+        </view>
+    </objects>
+</document>
