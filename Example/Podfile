@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'MKBToolTips_Example', :exclusive => true do
+  pod "MKBToolTips", :path => "../"
+end
+
+target 'MKBToolTips_Tests', :exclusive => true do
+  pod "MKBToolTips", :path => "../"
+
+  
+end
